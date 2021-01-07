@@ -1,0 +1,96 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #1b1b1b;
+  color: #a0aaaa;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100%;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.title {
+  color: #FFFAF0;
+  font-size:25px;
+  text-align: center;
+  margin: 10px 5px 20px 5px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #a0aaaa;
+  text-align: center;
+}
+
+.tab {
+  flex: 1;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.tab.active {
+  border-bottom: 2px solid lime;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 15px 0;
+}
+
+.item img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.bottom {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.bottom .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.ant-pagination li, .ant-pagination li button {
+  background-color: transparent !important;
+  color: #dddddd;
+}
+
+.ant-pagination li a, .ant-pagination li svg {
+  color: #dddddd;
+}
+
+.modal {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: calc(100vw - 60px);
+  height: calc(100vh - 60px);
+}
+
+.modal iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  box-shadow: 1px 1px 3px 3px lime;
+  background-color: #1b1b1b;
+}
+
+.modal .close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
